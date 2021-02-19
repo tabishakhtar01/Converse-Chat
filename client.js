@@ -1,4 +1,4 @@
-const socket = io("http://localhost:8000");
+const socket = io();
 // const io = window.io = require('socket.io-client');
 
 
