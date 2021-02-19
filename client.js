@@ -14,6 +14,7 @@ const inputMessage = document.getElementById('input-message');
 //         appendMessage(`${names} connected, Hii`,'right');
 //     }
 const names = "Friend";
+console.log("working");
 
 socket.on('send-everyone',data => // step 5: connected clients recives the message
 {
