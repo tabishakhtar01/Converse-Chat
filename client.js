@@ -3,10 +3,17 @@ const socket = io("http://localhost:8000");
 const formConatiner = document.getElementById('form-container');
 const messageContainer = document.getElementById('message-container');
 const inputMessage = document.getElementById('input-message');
+// const iname = document.getElementById('name');
+// const ibtn = document.getElementById('ibtn');
 
-const names = prompt("Enteryour name");
-
-appendMessage(`${names} connected, Hii`,'right');
+// ibtn.addEventListener('submit',()=>
+// {
+//     while(!names)
+//     {
+//         const names = iname.value;
+//         appendMessage(`${names} connected, Hii`,'right');
+//     }
+const names = "Friend";
 
 socket.on('send-everyone',data => // step 5: connected clients recives the message
 {
@@ -56,5 +63,3 @@ function scrollPage()
 {
     messageContainer.scrollTop =  messageContainer.scrollHeight;
 }
-
-
