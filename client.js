@@ -16,7 +16,7 @@ const inputMessage = document.getElementById('input-message');
 //         const names = iname.value;
 //         appendMessage(`${names} connected, Hii`,'right');
 //     }
-const names = "Friend";
+const names = prompt("Got any nickname?");
 console.log("working");
 
 socket.on('send-everyone',data => // step 5: connected clients recives the message
@@ -36,7 +36,7 @@ socket.on('new-user-joined',user=>
     appendMessage(`${user} joined`,'left');
 })
 
-socket.on('user-disconnected',()=>
+socket.on('user-disconnected',(user)=>
 {
     appendMessage(`${user} disconnected`,'left');
 })
