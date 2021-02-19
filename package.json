@@ -1,5 +1,5 @@
 {
-  "name": "thirdTrial",
+  "name": "ttt",
   "version": "1.0.0",
   "description": "",
   "main": "client.js",
@@ -7,12 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabishakhtar01/Converse-Chat.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tabishakhtar01/Converse-Chat/issues"
+  },
+  "homepage": "https://github.com/tabishakhtar01/Converse-Chat#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "socket.io": "^3.1.1",
-    "socket.io-client": "^3.1.1"
+    "socket.io": "^3.1.1"
   }
 }
